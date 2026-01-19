@@ -255,4 +255,69 @@ nav h2 .grad{
     margin-top: 70px;
 }
 
+/* Feature Section  */
+.feature{
+    background-color: #1A0B2E;
+    padding: 120px 0;
+}
 
+.feature-container{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.feature-container h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.feature-video-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.feature-video{
+    border-radius: 24px;
+    overflow: hidden;
+    text-align: left;
+}
+.feature-video iframe{
+    width: 100%;
+}
+
+.v-descrip{
+    padding: 24px;
+    background-color: #250D44;
+}
+
+.v-descrip h3{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.v-descrip p{
+    color: white;
+    opacity: 60%;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.v-descrip .time{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    gap: 6px;
+}
+
+.v-descrip .time h6{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #00FF88;
+}
