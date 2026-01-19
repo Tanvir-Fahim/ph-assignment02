@@ -276,7 +276,7 @@ nav h2 .grad{
 .feature-video-container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 30px;
 }
 
@@ -284,6 +284,9 @@ nav h2 .grad{
     border-radius: 24px;
     overflow: hidden;
     text-align: left;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
 }
 .feature-video iframe{
     width: 100%;
@@ -320,4 +323,58 @@ nav h2 .grad{
     font-size: 1rem;
     font-weight: 600;
     color: #00FF88;
+}
+
+/* Host Section  */
+.host-container{
+    margin: 0 auto;
+}
+
+.host-container h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 120px;
+}
+
+.host{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 40px;
+    border-radius: 40px;
+}
+
+.host-content h3{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.host-content p{
+    color: white;
+    opacity: 60%;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.host-icon{
+    display: flex;
+    justify-content: left;
+    gap: 18px;
+}
+
+.icon-link{
+    border: 1px solid #533C72;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
