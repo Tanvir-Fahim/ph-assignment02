@@ -378,3 +378,61 @@ nav h2 .grad{
     justify-content: center;
     align-items: center;
 }
+
+/* Footer  */
+footer{
+    background: url("assets/footer-bg.png");
+    padding: 120px 0;
+}
+
+.footer-container{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-container p{
+    color: #FAFAFA;
+    opacity: 60%;
+}
+
+.footer-container h1{
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 32px;
+}
+
+.footer-container h1 .grad{
+    background: linear-gradient(to top right, #F7E93F, #FB09B4, #9100F8);
+    background-clip: text;
+    color: transparent;
+}
+
+.footer-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 32px;
+}
+
+.footer-link-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-link-item h5{
+    color: white;
+    opacity: 60%;
+}
+
+/* Hover button  */
+
+button:hover{
+    color: black;
+    cursor: pointer;
+    background: yellow;
+}
+
+/* Animation  */
