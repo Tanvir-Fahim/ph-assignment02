@@ -106,7 +106,11 @@ nav h2 .grad{
     font-size: 3.75rem;
     font-weight: 800;
     margin-top: 40px;
-    color: white;
+    color: transparent;
+    background: linear-gradient(to top right, #F7E93F, #fe4040, #9100F8, #dbf800,#9100F8,#cff800);
+    background-clip: text;
+    background-size: 200%;
+    animation: Animate 2s linear infinite;
 }
 
 .hero-container p{
@@ -436,3 +440,8 @@ button:hover{
 }
 
 /* Animation  */
+@keyframes Animate{
+    to{
+        background-position: 200%;
+    }
+}
