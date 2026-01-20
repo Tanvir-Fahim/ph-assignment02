@@ -496,9 +496,9 @@ iframe {
     .hero {
         padding: 60px 0;
     }
-    .hero-badge {
+    /* .hero-badge {
         right: 15%;
-    }
+    } */
     .hero-content h1 {
         font-size: 3rem;
     }
