@@ -64,14 +64,17 @@ nav h2 .grad{
 }
 
 .hero{
-    background: url("./assets/hero-bg.png");
+    background: url("assets/hero-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
     padding: 100px 0;
 }
 
 .hero-container{
-    max-width: 35%;
+    width: 90%;
+    max-width: 600px;
     margin: 0 auto;
     text-align: center;
 }
@@ -81,12 +84,17 @@ nav h2 .grad{
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 1.5%;
+}
+
+.hero-circle{
+    max-width: 100%;
+    height: auto;
 }
 
 .hero-mic{
     position: absolute;
     z-index: 5;
+    width: 20%;
 }
 
 .hero-badge{
@@ -98,8 +106,9 @@ nav h2 .grad{
     background-color: #00FF88;
     padding: 8px 16px;
     border-radius: 1000px;
-    top: 8%;
-    right: 20%;
+    top: 5%;
+    right: 22%;
+    box-shadow: 0 3px 27px #00FF88;
 }
 
 .hero-content h1{
@@ -208,7 +217,11 @@ nav h2 .grad{
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
-    color: white;
+    color: transparent;
+    background: linear-gradient(to top right, #F7E93F, #fe4040, #9100F8, #dbf800,#9100F8,#cff800);
+    background-clip: text;
+    background-size: 200%;
+    animation: Animate 2s linear infinite;
     margin-bottom: 40px;
 }
 
@@ -387,6 +400,8 @@ nav h2 .grad{
 footer{
     background: url("assets/footer-bg.png");
     padding: 120px 0;
+    background-size: cover;
+    background-position: center;
 }
 
 .footer-container{
@@ -432,7 +447,6 @@ footer{
 }
 
 /* Hover button  */
-
 button:hover{
     color: black;
     cursor: pointer;
@@ -443,5 +457,130 @@ button:hover{
 @keyframes Animate{
     to{
         background-position: 200%;
+    }
+}
+
+/* Extra for responsive */
+
+nav .menu{
+    display: none;
+}
+
+iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+
+
+
+/* Responsive Codes */
+@media screen and (max-width: 576px)
+{
+    .container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Navbar */
+    .nav-container ul, 
+    .nav-container .btn {
+        display: none;
+    }
+
+    .nav-container .menu {
+        display: block;
+    }
+
+    /* Hero Section  */
+    .hero {
+        padding: 60px 0;
+    }
+    .hero-badge {
+        right: 15%;
+    }
+    /* .hero-content h1 {
+        font-size: 3rem;
+    } */
+    .hero-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: nowrap;
+    }
+
+
+    .hero-btn1, .hero-btn2 {
+        padding: 10px 14px;
+        font-size: 0.85rem;
+        white-space: nowrap;
+    }
+
+    /* About Card  */
+    .about-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding-top: 40px;
+    }
+    .about-card-item h1 {
+        font-size: 2rem;
+    }
+
+    /* Why choose card  */
+    .card-container h1{
+        font-size: 2.5rem;
+    }
+    .card-item {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .card-item-1, .card-item-2, .card-item-3, .card-item-4, .card-item-5 {
+        grid-area: auto; 
+    }
+    .card-box {
+        text-align: left;
+        padding: 30px;
+    }
+    .box-1 img{
+    margin-top: 0;
+    }
+
+    /* Feature Section  */
+    .feature-video-container{
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    /* Host  */
+    .host{
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+    .host-icon{
+        justify-content: center;
+    }
+
+    /* Footer  */
+   .footer-link{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: center;
+        gap: 20px 30px;
+        margin-bottom: 40px;
+    }
+    .footer-link-item{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-container h1{
+        font-size: 3rem;
+        margin-bottom: 24px;
     }
 }
