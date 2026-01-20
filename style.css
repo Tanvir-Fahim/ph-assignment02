@@ -81,6 +81,7 @@ nav h2 .grad{
     display: flex;
     justify-content: center;
     align-items: center;
+    left: 1.5%;
 }
 
 .hero-mic{
@@ -135,4 +136,56 @@ nav h2 .grad{
     background-color: transparent;
     padding: 12px 20px;
     border-radius: 1000px;
+}
+
+/* About section  */
+.about-container{
+    background-color: #1A0B2E;
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+
+.about-content{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about-content h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.about-content p{
+    line-height: 28px;
+    color: white;
+    opacity: 80%;
+    margin-bottom: 80px;
+}
+
+.about-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+    gap: 80px;
+    border-top: 1px solid rgba(255, 255, 255, 0.562);
+    margin: 0 auto;
+}
+
+.about-card-item{
+    text-align: center;
+    padding: 0 20px;
+}
+
+.about-card-item h1{
+    color: #00FF88;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+.about-card-item p{
+    color: white;
 }
