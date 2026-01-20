@@ -189,3 +189,70 @@ nav h2 .grad{
 .about-card-item p{
     color: white;
 }
+
+/* Card Section  */
+.card{
+    background-color: #230E3D;
+    padding: 120px 0;
+}
+
+.card-container{
+    margin: 0 auto;
+}
+
+.card-container h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.card-item-1{
+    grid-area: item-1;
+}
+.card-item-2{
+    grid-area: item-2;
+}
+.card-item-3{
+    grid-area: item-3;
+}
+.card-item-4{
+    grid-area: item-4;
+}
+.card-item-5{
+    grid-area: item-5;
+}
+
+.card-item{
+    display: grid;
+    grid-template-areas: 
+            'item-1 item-2 item-2'
+            'item-1 item-3 item-3'
+            'item-4 item-4 item-5';
+    gap: 30px;
+}
+
+.card-box{
+    background-color: rgba(53, 17, 101, 0.4);
+    text-align: left;
+    padding: 40px;
+    border-radius: 40px;
+}
+
+.card-box h3{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 16px 0;
+}
+.card-box p{
+    color: white;
+    opacity: 60%;
+    line-height: 24px;
+}
+.box-1 img{
+    margin-top: 70px;
+}
+
+
