@@ -63,3 +63,76 @@ nav h2 .grad{
     border: none;
 }
 
+.hero{
+    background: url("./assets/hero-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+
+.hero-container{
+    max-width: 35%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-mic{
+    position: absolute;
+    z-index: 5;
+}
+
+.hero-badge{
+    position: absolute;
+    z-index: 7;
+    color: #1A0B2E;
+    font-size: 1.124rem;
+    font-weight: 600;
+    background-color: #00FF88;
+    padding: 8px 16px;
+    border-radius: 1000px;
+    top: 8%;
+    right: 20%;
+}
+
+.hero-content h1{
+    font-size: 3.75rem;
+    font-weight: 800;
+    margin-top: 40px;
+    color: white;
+}
+
+.hero-container p{
+    margin-top: 8px;
+    color: white;
+    opacity: 80%;
+    margin-bottom: 24px;
+}
+
+.hero-btn{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.hero-btn1{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.hero-btn2{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #00FF88;
+    font-weight: 600;
+    border: 1px solid #00FF88;
+    background-color: transparent;
+    padding: 12px 20px;
+    border-radius: 1000px;
+}
